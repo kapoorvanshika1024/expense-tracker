@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve", // Allow JSX syntax in .tsx files
+    "target": "esnext", // Specify ECMAScript target version
+    "module": "esnext", // Specify module code generation
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "strict": true, // Enable strict type checking
+    "allowJs": true, // Allow JavaScript files
+    "baseUrl": ".", // Set base directory for imports
+    "paths": {
+      "@/*": [
+        "./*"
+      ] // Configure paths for cleaner imports
+    },
+    "resolveJsonModule": true, // Allow importing JSON files
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    "skipLibCheck": true, // Skip type checking for node_modules
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ], // Include these files
+  "exclude": [
+    "node_modules"
+  ] // Exclude node_modules
+}
