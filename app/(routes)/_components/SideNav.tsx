@@ -1,7 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
+<<<<<<< HEAD
 import { LayoutGrid, ReceiptText, PiggyBank, Users } from "lucide-react";
+=======
+import { LayoutGrid, ReceiptText, PiggyBank, ShieldCheck } from "lucide-react";
+>>>>>>> 8e3ebbc440dac9bac08132577a0bcdb19e213f27
 import { UserButton } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -18,7 +22,11 @@ function SideNav(): JSX.Element {
     { id: 1, name: "Dashboard", icon: LayoutGrid, path: "/dashboard" },
     { id: 2, name: "Budgets", icon: PiggyBank, path: "/dashboard/budgets" },
     { id: 3, name: "Expenses", icon: ReceiptText, path: "/dashboard/expenses" },
+<<<<<<< HEAD
     { id: 4, name: "About Us", icon: Users, path: "/dashboard/aboutus" },
+=======
+    { id: 4, name: "Upgrade", icon: ShieldCheck, path: "/dashboard/upgrade" },
+>>>>>>> 8e3ebbc440dac9bac08132577a0bcdb19e213f27
   ];
 
   const path = usePathname();
